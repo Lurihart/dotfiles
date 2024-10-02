@@ -5,7 +5,7 @@
   font-family:
     FontAwesome,
     JetbrainsMono Nerd Font;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 window#waybar {
@@ -32,9 +32,6 @@ button:hover {
 }
 
 /* you can set a style on hover for any module like this */
-#pulseaudio:hover {
-  background-color: #a37800;
-}
 
 #workspaces {
   background: @color0;
@@ -44,15 +41,15 @@ button:hover {
 #workspaces button {
   padding: 0 15px;
   background-color: transparent;
-  color: @color5;
+  color: @color14;
   transition: all 0.5s;
   border-radius: 10px;
 }
 
 #workspaces button.active {
-  background: @color1;
-  color: @color7;
-  border-bottom: 2px solid @color7;
+  background: @color14;
+  color: @color0;
+  border-bottom: 3px solid @color15;
 }
 
 #workspaces button:hover {
@@ -80,9 +77,9 @@ button:hover {
 #pulseaudio,
 #deskinfo,
 #custom-notification {
-  padding: 0 10px;
+  padding: 3px 10px;
   border-radius: 10px;
-  margin-right: 8;
+  margin-right: 8px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -96,13 +93,13 @@ button:hover {
 }
 
 #clock {
-  background-color: #383c4a;
-  color: @color7;
+  background-color: @color14;
+  color: @color0;
 }
 
 #battery {
-  background: #383c4a;
-  color: @color7;
+  background: @color0;
+  color: @color14;
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
@@ -111,13 +108,13 @@ button:hover {
 }
 
 #backlight {
-  background-color: #383c4a;
-  color: @color7;
+  background-color: @color0;
+  color: @color14;
 }
 
 #network {
-  background-color: #383c4a;
-  color: @color7;
+  background-color: @color0;
+  color: @color14;
   font-size: 0.8em;
   padding-right: 1.7em;
 }
@@ -128,18 +125,13 @@ button:hover {
 
 #audio {
   border-radius: 10px;
-  background: #383c4a;
-  color: @color7;
+  background: @color0;
+  color: @color14;
   margin-right: 8px;
 }
 
 #cava {
   padding: 0 0 5px 5px;
-}
-
-#pulseaudio.muted {
-  background-color: #90b1b1;
-  color: #2a5c45;
 }
 
 #temperature.critical {
@@ -148,17 +140,16 @@ button:hover {
 
 #custom-launcher {
   font-size: 24px;
-  margin-bottom: 2px;
   margin-right: 8px;
   padding: 0 10px 0 15px;
   border-radius: 10px;
   color: @color0;
-  background: @color7;
+  background: @color14;
 }
 
 #window {
-  background: #383c4a;
-  color: @color7;
+  background: @color0;
+  color: @color14;
 }
 
 #mpris {
@@ -170,14 +161,14 @@ button:hover {
 }
 
 #deskinfo {
-  background: @color7;
+  background: @color14;
   border-radius: 10px;
   color: @color0;
 }
 
 #custom-notification {
-  background: #383c4a;
-  color: @color7;
+  background: @color0;
+  color: @color14;
   padding: 0 1.2em;
 }
 
@@ -185,14 +176,15 @@ button:hover {
   padding: 0 10px;
   padding-left: 15px;
   border-radius: 10px;
-  background: @color7;
+  background: @color14;
   margin-right: 2px;
   color: @color0;
 }
 
 #custom-updates {
-  background: @color7;
-  color: @color0;
+  background: @color0;
+  color: @color14;
   border-radius: 10px;
   padding: 0 10px;
+  margin-right: 8px;
 }

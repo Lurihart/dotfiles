@@ -5,11 +5,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Theme
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # PLugins
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
@@ -38,7 +40,8 @@ source $ZSH/oh-my-zsh.sh
 alias gth="tmux a -t hypr"
 alias ctmux="tmux a -t tmux"
 alias way="tmux a -t way"
-alias pywal="v ~/.cache/wal/colors"
+alias pywal="tmux a -t pywal"
+alias dot="tmux a -t dot"
 
 alias z="nvim $HOME/.zshrc"
 alias v="nvim"
@@ -46,8 +49,8 @@ alias c="cd ~/.config"
 alias prev="cd ../"
 
 # Execute pywal
-wal -i "$HOME/Pictures/Anime-Girl-Rain.png"
-clear
+(cat ~/.cache/wal/sequences &)
+
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
@@ -96,3 +99,6 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls -A --color $realpath'
 eval "$(fzf --zsh)"
 export FZF_DEFAULT_COMMAND='find .'
 
+
+# Created by `pipx` on 2024-10-01 14:45:43
+export PATH="$PATH:/home/lu/.local/bin"
