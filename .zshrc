@@ -43,10 +43,11 @@ alias way="tmux a -t way"
 alias pywal="tmux a -t pywal"
 alias dot="tmux a -t dot"
 
-alias z="nvim $HOME/.zshrc"
+alias z="nvim $HOME/dotfiles/.zshrc"
 alias v="nvim"
-alias c="cd ~/.config"
+alias c="cd"
 alias prev="cd ../"
+alias ls="ls -A"
 
 # Execute pywal
 (cat ~/.cache/wal/sequences &)
