@@ -45,9 +45,10 @@ alias dot="tmux a -t dot"
 
 alias z="nvim $HOME/dotfiles/.zshrc"
 alias v="nvim"
-alias c="cd"
 alias prev="cd ../"
-alias ls="ls -A"
+alias ls="eza"
+alias ll="eza -alh"
+alias tree="eza --tree"
 
 # Execute pywal
 (cat ~/.cache/wal/sequences &)
@@ -100,6 +101,8 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls -A --color $realpath'
 eval "$(fzf --zsh)"
 export FZF_DEFAULT_COMMAND='find .'
 
-
 # Created by `pipx` on 2024-10-01 14:45:43
 export PATH="$PATH:/home/lu/.local/bin"
+
+# Intergrate zoxide
+eval "$(zoxide init --cmd cd zsh)"

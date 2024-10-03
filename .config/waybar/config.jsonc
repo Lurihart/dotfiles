@@ -16,6 +16,7 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
+        "custom/wallpaper",
         "group/audio",
         "group/deskinfo",
         "backlight",
@@ -148,5 +149,9 @@
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "interval": 15,
         "on-click": "kitty -e yay && notify-send 'The system has been updated'"
+  },
+  "custom/wallpaper":{
+        "format":" ",
+        "on-click": "bash ~/change_wallpaper.sh"
   }
 }

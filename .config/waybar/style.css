@@ -53,7 +53,7 @@ button:hover {
 }
 
 #workspaces button:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: @color13;
 }
 
 #workspaces button.focused {
@@ -76,7 +76,8 @@ button:hover {
 #network,
 #pulseaudio,
 #deskinfo,
-#custom-notification {
+#custom-notification,
+#custom-wallpaper {
   padding: 3px 10px;
   border-radius: 10px;
   margin-right: 8px;
@@ -187,4 +188,17 @@ button:hover {
   border-radius: 10px;
   padding: 0 10px;
   margin-right: 8px;
+}
+
+#custom-wallpaper {
+  font-size: 20px;
+  padding: 0 5px 0 10px;
+  background: @color14;
+  color: @color0;
+  transition: all 0.5s;
+}
+
+#custom-wallpaper:hover {
+  background: @color0;
+  color: @color14;
 }
