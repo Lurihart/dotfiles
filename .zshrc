@@ -106,3 +106,5 @@ export PATH="$PATH:/home/lu/.local/bin"
 
 # Intergrate zoxide
 eval "$(zoxide init --cmd cd zsh)"
+
+eval $(thefuck --alias)

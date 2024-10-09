@@ -27,7 +27,7 @@ for file in "$DIR"/*; do
 done
 
 # Prompt the user to select a wallpaper
-file=$(echo -en "$cmd" | PREVIEW=true rofi -dmenu -i -p "Select wallpaper:" -show-icons)
+file=$(echo -en "$cmd" | PREVIEW=true rofi -dmenu -i -p "Select wallpaper:" -show-icons -theme ~/.config/rofi/wallpaper.rasi)
 
 # If no file is selected, exit
 if [[ -z $file ]]; then

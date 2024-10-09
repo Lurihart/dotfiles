@@ -34,6 +34,9 @@ return {
         "vim", "lua", "vimdoc",
         "html", "css"
       },
+      highlight = {
+        enable = true,
+      }
     },
   },
   {
