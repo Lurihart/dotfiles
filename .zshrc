@@ -42,6 +42,7 @@ alias ctmux="tmux a -t tmux"
 alias way="tmux a -t way"
 alias pywal="tmux a -t pywal"
 alias dot="tmux a -t dot"
+alias p="tmux a -t Airbnb"
 
 alias z="nvim $HOME/dotfiles/.zshrc"
 alias v="nvim"
